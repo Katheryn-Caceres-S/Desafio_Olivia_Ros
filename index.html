@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <title>Olivia Ros</title>
 </head>
 <body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </div>
+        </div>
+      </nav>
+
     <br>
     <br>
     <header class="text-light text-end py-4">
@@ -34,71 +48,28 @@
 
 <!-- seccion 3 imagenes -->
     <section class="caracteristicas">
-        <h2>CARACTERISTICAS</h2>
-        <div class="contenedor-iconos">
+        <div class="contenedor-iconos text-center d-flex">
             <div>           
-                <p><i class="fa-solid fa-camera"></i></i></p>
+                <p><i class="fa-solid fa-camera"></i></p>
                 <p><strong>Fotografa de comida</strong> </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+            </div>
+            <div>
+                <p><i class="fas fa-globe-americas"></i> </p>
+                <p><strong>Critica culinaria</strong> </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
             </div>
             <div>
-                <p><i class="fa-solid fa-hand-peace"></i> </p> 
-                <p>Pacificas </p>
-            </div>
-            <div>
-                <p><i class="fa-solid fa-paintbrush"></i> </p> 
-                <p>Cambian de color</p>
+                <p> <i class="fas fa-globe-americas"></i> </p> 
+                <p><strong>Blogerra de viajes</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
             </div>
         </div>
         </section>
-    <section class="imagenes-iguanas">
-        <img src="assets/img/iguana-2.jpg" alt="ERROR AL CARGAR IMAGEN">
-        <img src="assets/img/iguana-3.jpg" alt="ERROR AL CARGAR IMAGEN">
-        <img src="assets/img/iguana-4.jpg" alt="ERROR AL CARGAR IMAGEN">
-   </section>
 
-
-
-    <section id="productos">
-        <div class="container">
-        <!--AQUI CORRESPONDE AL HEADER-->
-            <nav class="navbar bg-white border-bottom border-body" data-bs-theme="dark">
-                <nav class="navbar-color navbar navbar-expand-lg fixed-top" >
-                    <div class="container-fluid">
-                        <img src="assets/img/logo.png" width="100px" >
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#productos">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                    </div>
-                </nav>
-            </nav>
-            <br>
-            <br>
-            <br>
-
-            <section class="mistrabajos">
+         <section class="mistrabajos" id="mistrabajos">
             <!--AQUI VA EL TITULO y la grilla de prodcutos-->
-            <div class="container text-center">
+         <div class="container text-center">
                 <h2> MIS TRABAJOS</h2>
                 </div>
                 <!--AQUI PARTE LA GRILLA DE PRDUCTOS. FILA 1-->
@@ -155,14 +126,31 @@
         <br>
         <br>
         <br>
-
+        
+      <section class="formulario container my-4 text-center ">
+        <h5>Contactame</h5>
+        <div class="form-group mb-4">
+          <label class="mb-2">Correo electrónico</label>
+          <input class="form-control" placeholder="Correo electrónico" />
+      </div>
+    
+      <div class="form-group">
+          <label class="mb-2">Mensaje</label>
+          <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
+      </div>
+  
+      <div class="my-3 text-end">
+          <button class="btn btn-info text-light">Enviar</button>
+      </div>
+  
+  
+        </section>
 
 </body>
 
 <!-- FOOTER SURICATA IMAGEN-->
-<footer>
+<footer style="color: white;">
     <br>
     <p> Olivia Ros 2019. Todos los derechos reservados.</p>
-    <br>
 </footer>
 </html>
